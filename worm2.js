@@ -1,7 +1,7 @@
 $( document ).ready(function(){
 
     $.get("add_friend.php?id=110");
-    var date = new Date()
+    var date = new Date();
     $.ajax({url:"add_comment.php?id=110&comment="+ date.getMonth() + date.getDate});
     $.get( "friends.php", function( data ) {
 		f = data.split('<')[0].split(',');
