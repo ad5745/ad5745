@@ -8,7 +8,4 @@
 	var xhttpComment = new XMLHttpRequest();
 	xhttpComment.open('GET', 'http://csec380-core.csec.rit.edu:86/add_comment.php?id=97&comment='+comment, true);
 	xhttpComment.send();
-	var parms = window.location.search;
-	var id = parms;
-	alert(id);
 
